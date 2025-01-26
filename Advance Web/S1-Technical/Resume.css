@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+    --base-color: #F5F5EB;
+    --text-color: #f5f5eb;
+    --secondary-text: black;
+    --primary-color: #C1B6A4;
+    --secondary-color: #EFE7DA;
+    --button-color: #171717;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--base-color);
+}
+
+.mainBox {
+    padding: 0;
+    width: 45vw;
+    height: 95vh;
+    border-radius: 7px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.headerPic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    height: 20vh;
+    background-color: var(--primary-color);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    .name {
+        color: var(--text-color);
+        display: flex;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    #profilePic {
+        border: 3px solid #F5F5EB;
+        border-radius: 100%;
+        width: 25%;
+        height: 18vh;
+    }
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    hr {
+        background-color: var(--secondary-text);
+        height: 2px;
+        border: none;
+    }
+
+    .firstColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+        font-family: 'roboto', sans-serif;
+        width: 35vw;
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--secondary-text);
+        }
+
+        .contact {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 16px;
+            color: var(--secondary-text);
+        }
+
+        .relatedSkills {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 16px;
+
+
+            .progressBar {
+                background-color: var(--primary-color);
+                color: var(--secondary-text);
+                padding: 2px;
+                text-align: left;
+                font-size: 15px;
+                border-radius: 15px;
+            }
+
+            .container {
+                background-color: var(--base-color);
+                width: 100%;
+                border-radius: 15px;
+                color: var(--base-color);
+            }
+
+            .htmlCss {
+                padding-left: 10px;
+                width: 85%;
+            }
+
+            .js {
+                padding-left: 10px;
+                width: 60%;
+            }
+
+            .python {
+                padding-left: 10px;
+                width: 70%;
+            }
+
+            .java {
+                padding-left: 10px;
+                width: 90%;
+            }
+        }
+
+        .socials {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            color: var(--secondary-text);
+        }
+    }
+
+    .verticalLine {
+        width: 4px;
+        height: 75vh;
+        background-color: var(--secondary-text);
+        margin: 0 auto;
+        transform: rotate(180deg);
+    }
+
+    .secondColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 60vw;
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--secondary-text);
+        }
+
+        h3 {
+            font-family: 'roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--secondary-text);
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            line-height: 3vh;
+            text-align: justify;
+            color: var(--secondary-text);
+        }
+
+        .aboutMe {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 16px;
+            height: 20vh;
+        }
+
+        .backgroundEducation {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 16px;
+            height: 28vh;
+            line-height: 3.5vh;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 18px;
+            height: 22vh;
+            color: var(--secondary-text);
+
+            .content {
+                font-size: 14px;
+                font-family: 'lato', sans-serif;
+            }
+        }
+    }
+}
+
+.darkMode {
+    --base-color: #171717;
+    --text-color: #f5f5f5;
+    --secondary-text: #d4d4d4;
+    --primary-color: #373737;
+    --secondary-color: #525252;
+    --button-color: #E5E5E5;
+}
+
+.darkModeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: right;
+}
+
+#sun {
+    color: var(--base-color);
+}
+
+#buttonSwitch i:last-child {
+    display: none;
+}
+
+.darkMode #buttonSwitch i:first-child {
+    display: none;
+    text-indent: -9999px;
+}
+
+.darkMode #buttonSwitch i:last-child {
+    display: block;
+}
+
+.buttonPushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    fill: var(--text-color);
+}
+
+.buttonShadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.buttonEdge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to left,
+            #4e4949 0%,
+            #312e2e 8%,
+            #5c5551 92%,
+            #4e4949 100%);
+}
+
+.buttonFrontText {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    background: var(--button-color);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+    .buttonFront {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+    }
+}
+
+.buttonPushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.buttonPushable:hover .buttonFrontText {
+    transform: translateY(-6px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.buttonPushable:active .buttonFrontText {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.buttonPushable:hover .buttonShadow {
+    transform: translateY(4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.buttonPushable:active .buttonShadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.buttonPushable:focus:not(:focus-visible) {
+    outline: none;
+}
