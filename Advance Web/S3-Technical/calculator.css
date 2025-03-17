@@ -33,7 +33,7 @@
     text-align: right;
     height: 10vh;
     /* border: 1px solid black; */
-    text-overflow: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
     font-family: 'Times New Roman', Times, serif;
     padding-right: 10px;
