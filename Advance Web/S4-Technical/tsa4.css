@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    display: flex;
+    height: 100vh;
+    padding-top: 8vh;
+    background-color: wheat;
+    background-image: url(wholeBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menuContainer{
+    /* padding-top: 20%; */
+    /* border: 1px solid black; */
+}
+
+#header{
+    text-align: center;
+    padding: 4px;
+    background: linear-gradient(135deg, #ffffff, #f8f1e4);
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+#header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+#menuButton{
+    height: 10vh;
+    padding-top: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dishes{
+    display: flex;
+    flex-direction: row;
+    height: 63vh;
+    margin: 3vh;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 15px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #2c3e50;
+    margin: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+/* SINIGANG */
+.sinigangBox{
+    border: 4px solid #0047AB;
+    background: linear-gradient(135deg, #DCDCDC, #6E92C4);
+    border-radius: 10px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.sinigangHeader{
+    height: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.sinigangImage{
+    height: 57.3vh;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sinigangImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+
+/* ADOBO */
+.adoboBox{
+    border: 4px solid #0047AB;
+    background: linear-gradient(135deg, #DCDCDC, #6E92C4);
+    border-radius: 10px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.adoboHeader{
+    height: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.adoboImage{
+    height: 57.3vh;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.adoboImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* LUMPIA */
+.lumpiaBox{
+    border: 4px solid #0047AB;
+    background: linear-gradient(135deg, #DCDCDC, #6E92C4);
+    border-radius: 10px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.lumpiaHeader{
+    height: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.lumpiaImage{
+    height: 57.3vh;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lumpiaImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* SISIG */
+.sisigBox{
+    border: 4px solid #0047AB;
+    background: linear-gradient(135deg, #DCDCDC, #6E92C4);
+    border-radius: 10px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.sisigHeader{
+    height: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.sisigImage{
+    height: 57.3vh;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sisigImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.dishBox {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 25%;
+    height: auto;
+    border: 4px solid #0047AB;
+    background: linear-gradient(135deg, #DCDCDC, #6E92C4);
+    border-radius: 10px;
+}
+
+.dishBox:hover {
+    transform: scale(1);
+}
+
+.dishBox .dishDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.dishBox:hover .dishDescription {
+    opacity: 1;
+}
+
+#dishDetails {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#dishDetails img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#closeDetails {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
