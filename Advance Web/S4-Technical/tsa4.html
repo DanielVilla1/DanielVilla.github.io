@@ -1,80 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Bootstrap Files/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="tsa4.css">
-  <script src="tsa4.js"></script>
-  <title>TSA4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap Files/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="TSA4.css">
+    <script src="TSA4.js"></script>
+    <script src="https://kit.fontawesome.com/cbe5cf6b5c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 
 <body>
-  <div class="mainContainer">
-    <div class="container text-center" id="menuContainer">
-      <div class="row align-items-start">
-        <div class="col" id="header">
-          <h2>Best Home Dishes</h2>
-          <h1>Home Cooks Guide</h1>
+    <div class="mainContainer">
+        <div class="headerContainer">
+            <div class="headerTitle">
+                <h2><span class="highlight">BEST HOME DISHES</span></h2>
+                <h1>&nbsp;&nbsp;HOME COOKS GUIDE</h1>
+                <p>&nbsp;&nbsp;&nbsp;Produced by: Local Magazine</p>
+            </div>
+            <button type="button" class="btn btn-light">Main Menu</button>
         </div>
-        <div id="menuButton">
-          <button type="button" class="btn btn-light btn-lg">MAIN MENU</button>
+        <div class="cards">
+            <div class="dishesCards adobo">
+                <div class="cardTitle">ADOBO</div>
+                <div class="dishImage">
+                    <img src="adoboPic.jpg" alt="">
+                    <div class="dishDesc">
+                        <hr>
+                        A classic Filipino dish of marinated meat braised in vinegar, soy sauce, and spices.
+                        <hr>
+                        <div class="more">
+                            <i class="fa-regular fa-circle-play"></i>
+                            More
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dishesCards sinigang">
+                <div class="cardTitle">SINIGANG</div>
+                <div class="dishImage">
+                    <img src="sinigang.jpg" alt="">
+                    <div class="dishDesc">
+                        <hr>
+                        A sour and savory Filipino soup with tamarind, vegetables, and pork or shrimp.
+                        <hr>
+                        <div class="more">
+                            <i class="fa-regular fa-circle-play"></i>
+                            More
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dishesCards sisig">
+                <div class="cardTitle">SISIG</div>
+                <div class="dishImage">
+                    <img src="sisig.jpg" alt="">
+                    <div class="dishDesc">
+                        <hr>
+                        A sizzling Filipino dish made from chopped pig’s head and liver, seasoned with calamansi and
+                        chili peppers.
+                        <hr>
+                        <div class="more">
+                            <i class="fa-regular fa-circle-play"></i>
+                            More
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dishesCards lumpia">
+                <div class="cardTitle">LUMPIA</div>
+                <div class="dishImage">
+                    <img src="lumpiabg.jpg" alt="">
+                    <div class="dishDesc">
+                        <hr>
+                        Filipino spring rolls filled with vegetables and/or meat, served with a sweet dipping sauce.
+                        <hr>
+                        <div class="more">
+                            <i class="fa-regular fa-circle-play"></i>
+                            More
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="dishes">
-        <div class="sinigangBox dishBox">
-          <div class="sinigangHeader">
-            <h2>Sinigang</h2>
-          </div>
-          <div class="sinigangImage">
-            <img src="sinigang.jpg" alt="">
-          </div>
-          <div class="dishDescription">
-            A sour and savory Filipino soup with tamarind, vegetables, and pork or shrimp.
-          </div>
+        <div class="modalContainer">
+            <div class="modalTitleSide">ADOBO</div>
+            <div class="modalImage">
+                <img src="modalAdobo.jpg" alt="">
+                <!-- <img src="modalSinigang..jpg" alt=""> -->
+                <!-- <img src="modalSisig.jpg" alt=""> -->
+                <!-- <img src="modalLumpia.jpg" alt=""> -->
+            </div>
+            <div class="modalDishName">ADOBO</div>
+            <div class="leftInfo">
+                235 GLENDALE AVE. <br>
+                MARIDIEN CITY <br>
+                T: 490 49 4000 <br>
+                W: GANDG RES
+            </div>
+            <div class="rightInfo">
+                CATEGORY: FILIPINO <br>
+                OPEN: 10AM to 10PM <br>
+                PRICE: $$$ <br>
+            </div>
+            <div class="modalDesc">&emsp;&emsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa autem,
+                necessitatibus
+                tempora maiores doloremque commodi mollitia aspernatur natus illum molestiae libero veritatis unde amet
+                suscipit deleniti fuga alias, consectetur excepturi ea reiciendis. Eos incidunt atque sequi minus
+                accusantium, nesciunt corrupti! <br> <br>
+                &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe minima
+                reprehenderit placeat aliquam fuga aperiam omnis, illum maiores nobis natus blanditiis recusandae, alias
+                voluptates deleniti hic, excepturi ducimus ullam.
+            </div>
         </div>
-
-        <div class="adoboBox dishBox">
-          <div class="adoboHeader">
-            <h2>Adobo</h2>
-          </div>
-          <div class="adoboImage">
-            <img src="Adobo.jpg" alt="">
-          </div>
-          <div class="dishDescription">
-            A classic Filipino dish of marinated meat braised in vinegar, soy sauce, and spices.
-          </div>
-        </div>
-
-        <div class="lumpiaBox dishBox">
-          <div class="lumpiaHeader">
-            <h2>Lumpia</h2>
-          </div>
-          <div class="lumpiaImage">
-            <img src="lumpia.jpg" alt="">
-          </div>
-          <div class="dishDescription">
-            Filipino spring rolls filled with vegetables and/or meat, served with a sweet dipping sauce.
-          </div>
-        </div>
-
-        <div class="sisigBox dishBox">
-          <div class="sisigHeader">
-            <h2>Sisig</h2>
-          </div>
-          <div class="sisigImage">
-            <img src="sisig.jpg" alt="">
-          </div>
-          <div class="dishDescription">
-            A sizzling Filipino dish made from chopped pig’s head and liver, seasoned with calamansi and chili peppers.
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
-
 </body>
 
 </html>
